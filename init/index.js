@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const initData= require("./listing.js");
-
+require('dotenv').config({ path: '../.env' });
 const Listing=require("../models/listing.js");
 
 main().then((res) => {

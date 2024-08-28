@@ -11,7 +11,6 @@
 //         .setLngLat(coordinates)
 //         .setPopup(new mapboxgl.Popup({offset:25}).setHTML("<p>Exact location provided after booking</p>"))
 //         .addTo(map);
-
 let customIcon = L.divIcon({
     className: 'custom-icon',
     html: '<i class="fa-solid fa-location-dot" style="color: #ff0000; font-size: 24px;"></i>',
@@ -19,6 +18,7 @@ let customIcon = L.divIcon({
     iconAnchor: [12, 24], // Anchor point of the icon
     popupAnchor: [0, -24] // Position of the popup relative to the icon
 });
+console.log(coordinates);
 
 let map = L.map('map').setView([coordinates[1],coordinates[0]], 13);
 
